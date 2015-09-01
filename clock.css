@@ -1,0 +1,47 @@
+#clock{
+
+	font-family: sans-serif;
+	font-size: 240px;
+	color: green;
+	text-align: center;
+}
+
+#header{
+	width:100%;
+}
+#countdown{
+	display: inline-block;
+	background-color: white;
+	margin: 24px;
+	padding: 12px;
+	border: 1px solid red;
+	border-radius: 4%;
+	float: left;
+}
+
+#text{
+	margin: 24px;
+	padding: 12px;
+	font-size: 24px;
+	border: 1px solid blue;
+	border-radius: 4%;
+	float: right;
+}
+
+#rick-outer{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color: orange;
+	display: none;	
+}
+#rick-inner{
+	width: 500px;
+	height: 400px;
+	padding:10px;
+	margin: 60px auto;
+	background-color: red;
+	border: 20px black solid;
+}

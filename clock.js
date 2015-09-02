@@ -16,7 +16,13 @@ function main(){
 
 	$("#text").change(function(){
 		var inputValue = $("#text").val();
-		var time = inputValue.split(":");
+		var patt=/^[0-9]+\:[0-9]+\:[0-9]+$/
+		var res = patt.test(inputValue);
+		if (!res){
+			inputValue="23:59:59"; 
+			$("#text").val(inputValue);
+		}
+		var time = inputValue.split(":");	
 		f.setHours(time[0]);
 		f.setMinutes(time[1]);
 		f.setSeconds(time[2]);
